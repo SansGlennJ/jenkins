@@ -5,7 +5,7 @@ pipeline {
   }
   parameters {    
     string(name: 'CONTAINER', defaultValue: "hub.docker.com/r/jenkins/jenkins:lts", description: 'Full path to the container to scan.'
-    booleanParam(name: 'DEDUPE_ENABLED', defaultValue: true, description: 'Remove duplicates from aggregation reports' )
+    booleanParam(name: 'DEDUPE_ENABLED', defaultValue: true, description: 'Remove duplicates from aggregation reports')
   }
   options {
     buildDiscarder(
